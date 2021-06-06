@@ -134,8 +134,8 @@
 			beqz	$v0, case_rotate_left
 			
 			jal	STOP
-			jal	UNTRACK
-			jal	TRACK
+#			jal	UNTRACK		# dung test cho nhanh thoi
+#			jal	TRACK			# khong can phai nhap cbc, dad moi lan chuyen huong
 			j	done
 		case_rotate_left:
 			la	$a0, ROTATE_LEFT_CODE
